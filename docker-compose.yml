@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+    db:
+      image: postgres
+      ports:
+        - "5432:5432"
+      networks:
+        - app-net
+      expose:
+        - "5432"
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: example
+      volumes:
+        - postgres-data:/var/lib/postgresql/data
+      restart: unless-stopped
+volumes:
+  postgres-data:        
+
+networks:
+  app-net:
