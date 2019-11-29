@@ -16,7 +16,7 @@ docker-compose up -d na raiz do projeto)
 
 ### Observação
 
-#####-  Caso não queira ter que compilar o projeto localmente, na pasta artefatos na raiz do projeto você tera:
+#### -  Caso não queira ter que compilar o projeto localmente, na pasta artefatos na raiz do projeto você tera:
 
 - quarkus-example-1.0.0-SNAPSHOT-runner : Imagem binária do projeto quarkus compilada e compátivel com a maioria das 
 distros Linux, executar com `./quarkus-example-1.0.0-SNAPSHOT-runner` 
